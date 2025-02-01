@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K&W Cafe</title>
+    <style>
+        /* Apply a background image to the entire page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('pictures/img6.png'); /* Replace with your image path */
+            background-repeat: no-repeat;
+            background-size: cover; /* Ensures the image covers the entire page */
+            background-position: center; /* Centers the image */
+            background-attachment: fixed; /* Ensures the image stays fixed while scrolling */
+            color: #e81c1c; /* Default text color */
+        }
+
+        /* Header styling */
+        header {
+            background-color: rgba(51, 51, 51, 0); /* Semi-transparent dark background */
+            color: #e71f1f;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        /* Navigation pane styling */
+        nav {
+            margin: 0;
+            padding: 10px;
+            background-color: rgba(68, 68, 68, 0); /* Semi-transparent dark background */
+            width: 150px;
+            position: fixed;
+            top: 60px;
+            left: 0;
+            height: 100%;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: block;
+            margin: 10px 0;
+        }
+        nav ul li a {
+            color: #f90e0e;
+            text-decoration: none;
+            display: block;
+            padding: 5px;
+        }
+
+        /* Main content styling */
+        main {
+            margin-left: 170px;
+            margin-right: 170px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.75); /* Semi-transparent white background */
+            color: #f61f1f; /* Dark text color for readability */
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: rgba(51, 51, 51, 0); /* Semi-transparent dark background */
+            color: #ef0808;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Hide all sections by default */
+        section {
+            display: none;
+        }
+        /* Show the active section */
+        section:target {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>K&W Cafe</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#hours">Hours</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to K&W Cafe! We are a local breakfast shop serving the best coffee on the block. Our hours are very irregular, so please check the "Hours" page for the next day we are open. No reservations required, but please give Willa or Kaley a heads if you will be stopping by.</h2>
+            <!-- <p>Welcome to K&W Cafe! We serve the best coffee and pastries in town.</p> -->
+        </section>
+
+        <section id="menu">
+            <h2>Menu</h2>
+            <p>We offer a variety of drinks and snacks, but feel free to bring something to contribute to the menu.</p>
+            <ul>
+                <li>Coffee -- any espresso based drink</li>
+                <li>Tea -- a variety of prepackaged and looseleaf flavors</li>
+                <li>Pancakes -- lemon ricotta with Tobin maple syrup</li>
+                <li>Pastries -- cookies and scones</li>
+                <li>Sourdough -- with butter and jam</li>
+            </ul>
+        </section>
+
+        <section id="hours">
+            <h2>Hours</h2>
+            <p>We are always open on the eve of a full moon.</p>
+            <p>Our next special opening will be on ...pending...</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>I can't put our contact information or address on here as this is a public website...<br>But if you are here that means you already have this information.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; K&W Cafe. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
